@@ -8,21 +8,12 @@
 </head>
 <body>
     <span>ITS ALIVE</span>
+    <div id="connection-link"></div>
 
+    
     <script src="/socket.io/socket.io.js"></script>
-    <script>
-        var socket = io();
-        socket.on('connect', socket => {
-            console.log(`CONNECTED!`);
-        });
-
-        socket.on('disconnect', socket => {
-            console.error(`DISCONNECTED FROM SERVER`);
-        });
-
-        socket.on('id', socket => {
-            console.log(socket);
-        });
-    </script>
+    <script src="/scripts/socket.js"></script>
+    <script src="/scripts/acelerometr.js"></script>
+    <script src="/scripts/userDetection.js"></script>
 </body>
 </html>

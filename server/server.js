@@ -19,6 +19,10 @@ io.on('connection', (socket) => {
     io.emit('id', shortid.generate());
 });
 
+io.on('changeOrientation', data => {
+    io.emit('orientationChanged', data);
+});
+
 server.listen(port, () => {
     console.log(`server is up on ${port}`);
 });
