@@ -9,10 +9,12 @@
   },
   "engines": {
     "node": "6.9.1"
-  }, 
+  },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.16.2"
+    "express": "^4.16.2",
+    "shortid": "^2.2.8",
+    "socket.io": "^2.0.4"
   }
 }
