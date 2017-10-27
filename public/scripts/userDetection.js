@@ -10,8 +10,10 @@ if(link.indexOf('?deviceId=') != -1) {
     socket.on('id', id => {
         linkArea.innerHTML = link + '?deviceId=#' + id;
     });
-
-    socket.on('orientationChanged', data => {
-        console.log(data);
-    });
 }
+
+let deltaNode = document.getElementById('delta"');
+
+socket.on('orientationChanged', data => {
+    deltaNode.innerHTML = data;
+});
