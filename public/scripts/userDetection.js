@@ -11,7 +11,7 @@ if(link.indexOf('?deviceId=') != -1) {
         linkArea.innerHTML = link + '?deviceId=#' + id;
     });
 
-    socket.io('orientationChanged', data => {
+    socket.on('orientationChanged', data => {
         console.log(data);
     });
 }
