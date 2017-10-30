@@ -12,8 +12,9 @@ if(link.indexOf('?deviceId=') != -1) {
     });
 }
 
-let deltaNode = document.getElementById('delta"');
+let deltaNode = document.getElementById('delta');
 
 socket.on('orientationChanged', data => {
+    console.log(data);
     deltaNode.innerHTML = data;
 });
